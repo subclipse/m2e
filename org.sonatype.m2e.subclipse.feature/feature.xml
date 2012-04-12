@@ -6,7 +6,7 @@
       provider-name="Sonatype, Inc."
       plugin="org.sonatype.m2e.subclipse">
 
-   <description url="http://m2eclipse.sonatype.org/">
+   <description url="http://eclipse.org/m2e">
       Checkout Maven projects from SVN
    </description>
 
@@ -22,7 +22,7 @@ http://www.eclipse.org/legal/epl-v10.html
    </license>
 
    <url>
-      <update label="Maven Integration" url="http://m2eclipse.sonatype.org/update/"/>
+      <update label="Maven Integration" url="http://subclipse.tigris.org/m2eclipse/1.0"/>
    </url>
 
    <requires>
