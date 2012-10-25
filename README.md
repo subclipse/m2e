@@ -19,7 +19,7 @@ We do not use Maven for Subclipse development, so I do not use this plugin. I
 will try to maintain it and can certainly update any Subclipse API calls if
 needed, but I will need help maintaining the Maven side of this if m2eclipse
 changes.  According to some of the pull-requests I have seen, this should work
-with m2eclipse 1.0 or 1.1 as the API has not changed.
+with m2eclipse 1.x as the API has not changed.
 
 Contributing
 ------------
