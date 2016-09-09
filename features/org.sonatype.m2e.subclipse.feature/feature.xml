@@ -3,7 +3,7 @@
       id="org.sonatype.m2e.subclipse.feature"
       label="Maven SCM handler for Subclipse"
       version="1.0.0.qualifier"
-      provider-name="Sonatype, Inc."
+      provider-name="Subclipse"
       plugin="org.sonatype.m2e.subclipse">
 
    <description url="http://eclipse.org/m2e">
