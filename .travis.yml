@@ -1,0 +1,17 @@
+sudo: false  
+language: java    
+jdk:
+  - oraclejdk8
+cache:  
+  directories:  
+   - $HOME/.m2
+before_install: ./setup_travis.sh
+script: "./mvnw package -B"
+deploy:
+  skip_cleanup: true
+  provider: bintray
+  file: "deploy.json"
+  user:
+      secure: "rZr69Tgx8WmNDry1CSWMS0a4yXoP3n0BUdlmxJOBLPSDwuvL/wrj0qP1BsdvZAa9Xq2928EhSdST+E78eYVi1KxqUg6FX1PbeXWE0CCr2qPCE2uN+ZUCIVkT5fDb/To35NpUPuNBhz07zAhKmhuXhiXfX+GNyBMnBXuc8Nf3H3ZDsjUXqafRphUWgU4UpKgOIW/vi/1+Om1Fi2TOYEqI2hPy8jc7Dfsim9Q9Qk4L6RLSzJLqg6RoMIjsPEy75hsXfX+u0MsBWD+h4D/pJLsNpOaJNK6uAo49tmlrxsPkWpNg1wim62OoADyT29XdKbfnyC+QuB5ByMrOM3EeuFgpti83Qtldzo54ORt6Ielxclw/x4JMGPZPtwQMEnDbClETZz0x8RZSGJtXV2JylcsdE7p5ADe0UNaRRfkcpTDzLpz1voQNj7bJDLZKjLjBH3iNECKXfR4Ht2Gda4Ct0P+mzF71knVqNu8DJEeZVYuOgd+wBNALFbpuzwWP1saib4LG82pG7r/2cX+tfXgktudwzjUh5aaJmwk3qcEkTpgDjN540dXf9zwCWP4sMIL6G9I63RM+bCjHF9DYVhGLjbbVMEg1R5o4d8M1WM0HMS/9EfXH+mJL05LHcJQaZ+w3GBEOfXAijUV/LB5Z8mwCjNRxF69yeXcY3n35IKPUE/5ObAE="
+  key:
+      secure: "Amv1zbNp8gABtxBab0ZNdfLfL2HVuzL1odcPKKx0a7sIxDoPR1DIg2HGMUAwAK1+SuHEVhB0Ne6LwNDLbzwdIBRUilbx4bIm9+uVLasGGrZfl04679Kt+V8u8ebJCuXntgInj0TPb+AUboy2V48Mws+vZCdGoL892wl+0fuhCnsZ3xN73gnwCv+W9dgytSuUgaIhWl1isyT7JowEabNGID+XU/s0XYA1c8XI+0FWtDTk+LpjX0oT+3mdqZlOzSBgsovRYNVz/GV8xWG9OGHaPsLdJylVzXaQkA07GV16geDO8pepQ2/sc8cZF34nyBXKG4TbA/0HNUOTkICybVZjsPo40Id26GimP9BcxT2zp7Qg2MGlWS6+ZfxjBv00fchW5yeeaJ3oBuTTBcxwBj5JdmsoHkOCvrKBsSygRBr/GNZ4zzQBaR4MAlhmAA1WDZTeifOqGDjxSpXlkFqeTeVSGtR8CwkqQk1NBMAKM9s72zviistbMQJskozTVHWCgPSXEQbzj6IZAywD7qWYkD2iAtierAmpDLhkSlSMoBRu14Pv3CMpNdiHjSPffWBZj4rFuVCeSUmIQ0qD0I8+a9nU4QUjnQGDxLTCQgn/GE/zaoK+CTxwyFOzDJPTy9wtY3bd90nBRXd9Gvvsdl9FtyYQmvC0vFhwNGwal32acKuR6a8="

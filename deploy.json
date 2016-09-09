@@ -1,0 +1,48 @@
+{
+    "package": {
+        "name": "m2e",
+        "repo": "releases",
+        "subject": "subclipse",
+        "desc": "m2eclipse-subclipse Release Builds",
+        "website_url": "https://github.com/subclipse/m2e",
+        "issue_tracker_url": "https://github.com/subclipse/m2e/issues",
+        "vcs_url": "https://github.com/subclipse/m2e.git",
+        "licenses": ["EPL-1.0"],
+        "public_download_numbers": false,
+        "public_stats": false
+    },
+
+    "version": {
+        "name": "1.0.x"
+    },
+
+    "files": [
+        {
+            "includePattern": "./releng/update-site/target/repository/artifacts.jar",
+            "uploadPattern": "artifacts.jar",
+            "matrixParams": { "override": 1 }
+        },
+        {
+            "includePattern": "./releng/update-site/target/repository/content.jar",
+            "uploadPattern": "content.jar",
+            "matrixParams": { "override": 1 }
+        },
+        {
+            "includePattern": "./releng/update-site/target/repository/plugins/(.*)",
+            "uploadPattern": "/m2e/1.0.x/plugins/$1",
+            "matrixParams": { "override": 1 }
+        },
+        {
+            "includePattern": "./releng/update-site/target/repository/features/(.*)",
+            "uploadPattern": "/m2e/1.0.x/features/$1",
+            "matrixParams": { "override": 1 }
+        },
+        {
+            "includePattern": "./releng/update-site/target/(.*\\.zip)",
+            "uploadPattern": "$1",
+            "matrixParams": { "override": 1 }
+        }
+    ],
+
+    "publish": true
+}
