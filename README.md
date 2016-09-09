@@ -1,27 +1,18 @@
 Maven SCM Integration for Subversion
 ====================================
 
+[![Build Status](https://travis-ci.org/subclipse/m2e.svg?branch=master)](https://travis-ci.org/subclipse/m2e)
+
 This is a fork of Sonatype's Subclipse plugin for m2eclipse. They indicated
-that they are no longer maintaining this plugin so I have updated it for the
-latest release of Subclipse.
+that they are no longer maintaining this plugin so we have updated it for the
+latest release of Subclipse and posted it to the Subclipse p2 repository.
 
 Eclipse p2 Update Site
 ----------------------
 
 An Eclipse p2 repository has been posted to the following location:
 
-    http://subclipse.tigris.org/m2eclipse/1.0
+    https://dl.bintray.com/subclipse/releases/m2e/1.0.x/
 
-Notes
------
-
-We do not use Maven for Subclipse development, so I do not use this plugin. I
-will try to maintain it and can certainly update any Subclipse API calls if
-needed, but I will need help maintaining the Maven side of this if m2eclipse
-changes.  According to some of the pull-requests I have seen, this should work
-with m2eclipse 1.x as the API has not changed.
-
-Contributing
-------------
 
 Want to contribute? Great! Just send me pull requests and we can review them.
