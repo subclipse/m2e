@@ -2,18 +2,12 @@
     "package": {
         "name": "m2e",
         "repo": "releases",
-        "subject": "subclipse",
-        "desc": "Subclipse-m2eclipse Release Builds",
-        "website_url": "https://github.com/subclipse/m2e",
-        "issue_tracker_url": "https://github.com/subclipse/m2e/issues",
-        "vcs_url": "https://github.com/subclipse/m2e.git",
-        "licenses": ["EPL-1.0"],
-        "public_download_numbers": false,
-        "public_stats": false
+        "subject": "subclipse"
     },
 
     "version": {
-        "name": "snapshot"
+        "name": "${TRAVIS_TAG}",
+        "vcs_tag": "${TRAVIS_TAG}"
     },
 
     "files": [
@@ -29,17 +23,17 @@
         },
         {
             "includePattern": "./releng/update-site/target/repository/plugins/(.*)",
-            "uploadPattern": "/m2e/1.0.x/plugins/$1",
+            "uploadPattern": "/m2e/${TRAVIS_TAG}/plugins/$1",
             "matrixParams": { "override": 1 }
         },
         {
             "includePattern": "./releng/update-site/target/repository/features/(.*)",
-            "uploadPattern": "/m2e/1.0.x/features/$1",
+            "uploadPattern": "/m2e/${TRAVIS_TAG}/features/$1",
             "matrixParams": { "override": 1 }
         },
         {
             "includePattern": "./releng/update-site/target/(.*\\.zip)",
-            "uploadPattern": "$1",
+            "uploadPattern": "subclipse-m2e-${TRAVIS_TAG}.zip",
             "matrixParams": { "override": 1 }
         }
     ],
