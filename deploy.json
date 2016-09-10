@@ -29,17 +29,17 @@
         },
         {
             "includePattern": "./releng/update-site/target/repository/plugins/(.*)",
-            "uploadPattern": "/m2e/1.0.x/plugins/$1",
+            "uploadPattern": "/m2e/snapshot/plugins/$1",
             "matrixParams": { "override": 1 }
         },
         {
             "includePattern": "./releng/update-site/target/repository/features/(.*)",
-            "uploadPattern": "/m2e/1.0.x/features/$1",
+            "uploadPattern": "/m2e/snapshot/features/$1",
             "matrixParams": { "override": 1 }
         },
         {
             "includePattern": "./releng/update-site/target/(.*\\.zip)",
-            "uploadPattern": "$1",
+            "uploadPattern": "/m2e/$1",
             "matrixParams": { "override": 1 }
         }
     ],

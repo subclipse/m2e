@@ -33,7 +33,7 @@
         },
         {
             "includePattern": "./releng/update-site/target/(.*\\.zip)",
-            "uploadPattern": "subclipse-m2e-${TRAVIS_TAG}.zip",
+            "uploadPattern": "/m2e/subclipse-m2e-${TRAVIS_TAG}.zip",
             "matrixParams": { "override": 1 }
         }
     ],
